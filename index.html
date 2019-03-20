@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TipConfirm - Confirmation through ToolTip</title>
+    <!-- LIBRARY STYLES -->
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/tip.confirm.css" />
+</head>
+
+<body class="blakish" style="padding-bottom: 50px">
+    <div style="margin-top: 50px; " class="text-center">
+        <h2>TipConfirm - <span class="sub-text">Confirmation through ToolTip</span></h2>
+
+        <h5>Fundamental Use</h5>
+        <div class="btn-group">
+            <a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Are you sure you want to delete?" data-theme="black" data-placement="left">
+                <i class="fa fa-trash"></i>
+            </a>
+            <a href="#" class="btn btn-primary btn-sm tc-save" data-message="Ready to save this?" data-theme="blue" data-placement="top">
+                <i class="fa fa-save"></i>
+            </a>
+            <a href="#" class="btn btn-success btn-sm tc-mail" data-message="Please confirm to send e-mail?" data-theme="green" data-placement="bottom">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="#" class="btn btn-danger btn-sm tc-share" data-message="Share to your favorite social media sites!" data-theme="red" data-placement="top">
+                <i class="fa fa-share-square-o"></i>
+            </a>
+            <a href="#" class="btn btn-info btn-sm tc-bookmark" data-message="Bookmark for later use?" data-theme="aqua" data-placement="right">
+                <i class="fa fa-bookmark"></i>
+            </a>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px" class="text-center">
+        <table class="table" style="max-width: 360px; display: inline-block;">
+            <tbody>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="4" style="text-align: center;">Preferred Placement</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Left</td>
+                    <td>Top</td>
+                    <td>Bottom</td>
+                    <td>Right</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" style="vertical-align: middle; border-right: 1px solid #ccc;">Sizes</th>
+                    <td style="vertical-align: middle;">Tiny</td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="tiny" data-theme="blue" data-placement="left"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="tiny" data-theme="black" data-placement="top"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="tiny" data-theme="red" data-placement="bottom"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="tiny" data-theme="green" data-placement="right"><i class="fa fa-hand-pointer-o"></i></a></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">Small</td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="small" data-theme="blue" data-placement="left"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="small" data-theme="black" data-placement="top"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="small" data-theme="red" data-placement="bottom"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="" data-theme="green" data-placement="right"><i class="fa fa-hand-pointer-o"></i></a></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">Large</td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="large" data-theme="blue" data-placement="left"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="large" data-theme="black" data-placement="top"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="large" data-theme="red" data-placement="bottom"><i class="fa fa-hand-pointer-o"></i></a></td>
+                    <td><a href="#" class="btn red tip-confirm" data-message="Are you sure?" data-size="large" data-theme="green" data-placement="right"><i class="fa fa-hand-pointer-o"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-ui.min.js"></script>
+    <script src="js/tip.confirm.js"></script>
+    <script src="js/options.js"></script>
+</body>
+
+</html>
