@@ -40,12 +40,12 @@ if (typeof Object.create !== 'function') {
                 message = elmdata.hasOwnProperty('message') ? elmdata.message : self.defaultMessage,
                 placement = elmdata.hasOwnProperty('placement') ? elmdata.placement : self.defaultPlacement;
 
-            var $innerContainer = $('<div />', {class: 'tc '+ theme});
-            var $messageContainer = $('<div />', {class: 'tc-message'}).text(message);
-            var $arrow = $('<div />', {class: 'arrow ' + placement});
+            var $innerContainer = $('<div />', { class: 'tc ' + theme });
+            var $messageContainer = $('<div />', { class: 'tc-message' }).text(message);
+            var $arrow = $('<div />', { class: 'arrow ' + placement });
             $messageContainer.appendTo($innerContainer);
             var btns = this._buttons();
-            if(btns){
+            if (btns) {
                 $.each(btns, function(index, el) {
                     el.appendTo($innerContainer);
                 })
@@ -59,14 +59,15 @@ if (typeof Object.create !== 'function') {
         _buttons: function() {
             var self = this,
                 setting = self.defaults,
-                $el = self.$el;
+                $el = self.$el,
+                $container = self.$container;
 
             var btns = {}
-            if(setting.buttons) {
+            if (setting.buttons) {
                 $.each(setting.buttons, function(index, el) {
-                    var $btn = $('<a />', {class: el.class})
-                                    .html(el.text);
-                    if(el.event && el.event === 'confirm') {
+                    var $btn = $('<a />', { class: el.class })
+                        .html(el.text);
+                    if (el.event && el.event === 'confirm') {
                         $btn.on('click', function(event) {
                             event.preventDefault();
                             if (setting.onSubmit !== undefined) {
@@ -74,8 +75,7 @@ if (typeof Object.create !== 'function') {
                                 self._afterSubmit();
                             }
                         });
-                    }
-                    else if(el.event && el.event === 'dismiss') {
+                    } else if (el.event && el.event === 'dismiss') {
                         $btn.on('click', function(event) {
                             event.preventDefault();
                             $el.removeData('tc');
@@ -84,8 +84,7 @@ if (typeof Object.create !== 'function') {
                                 $(this).remove();
                             })
                         });
-                    }
-                    else if(el.event && el.event !== 'confirm' && el.event !== 'dismiss') {
+                    } else if (el.event && el.event !== 'confirm' && el.event !== 'dismiss') {
                         $btn.attr('href', el.event);
                         $btn.attr('target', '_blank');
                     }
@@ -131,30 +130,30 @@ if (typeof Object.create !== 'function') {
             var self = this,
                 $el = self.$el,
                 elementData = $el.data(),
-                setting = self.defaults,
-                templateHtml = self._setTemplateHtml(),
-                template = self._processData();
+                setting = self.defaults;
+
 
             var $container = $('<div />', {
                     'class': 'tc-container'
                 })
                 .data('trigger', $el);
+            self.$container = $container;
 
-            if(elementData.hasOwnProperty('size')){
+            var templateHtml = self._setTemplateHtml(),
+                template = self._processData();
+
+            if (elementData.hasOwnProperty('size')) {
                 $container.addClass(elementData.size);
-            }
-            else {
+            } else {
                 $container.addClass(setting.size);
             }
 
-            if(setting.customButtons){
+            if (setting.customButtons) {
                 $container.append(templateHtml.inner);
                 $container.append(templateHtml.arrow);
-            }
-            else{
+            } else {
                 $container.append(template);
             }
-            self.$container = $container;
             $container.appendTo('body');
 
             $el.data('tc', $container);
@@ -357,8 +356,7 @@ if (typeof Object.create !== 'function') {
         // custom buttons will be shown if this property is true
         customButtons: true,
         // desired buttons on tip
-        buttons: [
-            {
+        buttons: [{
                 text: 'Yes',
                 event: 'confirm',
                 class: 'btn btn-success btn-xs'
