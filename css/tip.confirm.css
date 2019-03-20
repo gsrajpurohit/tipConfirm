@@ -1,0 +1,170 @@
+body {
+    color: #333;
+}
+
+.buttons-list {
+    margin: 10% auto;
+    display: block;
+    max-width: 800px;
+}
+
+/* TIP */
+.tc-container {
+    position: absolute;
+    display: block;
+    z-index: 99999;
+    opacity: 0;
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
+.tc-container .tc {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.tc-container .tc-message {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.tc-container .tc-cn {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tc-container .tc-cn:hover {
+    opacity: 0.7;
+}
+
+.tc-container .arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+}
+
+.tc-container .arrow.top {
+    border-color: #fff transparent transparent;
+    left: 50%;
+    bottom: -14px;
+    margin-left: -7px;
+}
+
+.tc-container .arrow.right {
+    border-color: transparent #fff transparent transparent;
+    left: -8px;
+    top: 30%;
+    margin-left: -7px;
+}
+
+.tc-container .arrow.left {
+    border-color: transparent transparent transparent #fff;
+    right: -15px;
+    top: 29%;
+    margin-left: -7px;
+}
+
+.tc-container .arrow.bottom {
+    border-color: transparent transparent #fff;
+    left: 50%;
+    top: -14px;
+    margin-left: -7px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+}
+
+.backdrop.black {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.backdrop.white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+body.blur>*:not(.tc-container) {
+    filter: blur(2px);
+}
+
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    padding: 1px 10px;
+    margin-bottom: 0;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: inherit;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.button-green {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+/* TIP SIZE */
+.tc-container.tiny {
+    font-size: 10px;
+    line-height: 0.9;
+}
+
+.tc-container.tiny .tc {
+    padding: 5px;
+}
+
+.tc-container.tiny .button {
+    border-radius: 2px;
+}
+
+.tc-container.small {
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.tc-container.tiny .tc {
+    padding: 10px;
+}
+
+.tc-container.tiny .button {
+    border-radius: 3px;
+    padding: 2px 7px;
+}
+
+.tc-container.large {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.tc-container.large .tc {
+    padding: 15px;
+}
+
+.margin-right {
+    margin-right: 5px;
+}
+
+.sub-text {
+    font-size: 25px;
+    color: #b5e9fb;
+}
