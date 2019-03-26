@@ -31,14 +31,17 @@ In the page's footer, just before, include the required JavaScript files.
 ### Create the HTML markup
 `<a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Are you sure you want to delete?" data-theme="black" data-placement="left">
       <i class="fa fa-trash"></i>
-</a>
-<a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Are you sure you want to send mail?" data-theme="red" data-placement="top">
+</a>`
+
+`<a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Are you sure you want to send mail?" data-theme="red" data-placement="top">
       <i class="fa fa-envelope"></i>
-</a>
-<a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Sure to save?" data-theme="aqua" data-placement="top">
+</a>`
+
+`<a href="#" class="btn btn-warning btn-sm tc-delete" data-message="Sure to save?" data-theme="aqua" data-placement="top">
       <i class="fa fa-save"></i>
-</a>
-<a href="#" class="btn btn-danger btn-sm tc-share" data-message="Share to your favorite social media sites!" data-theme="green" data-placement="bottom">
+</a>`
+
+`<a href="#" class="btn btn-danger btn-sm tc-share" data-message="Share to your favorite social media sites!" data-theme="green" data-placement="bottom">
     <i class="fa fa-share-square-o"></i>
 </a>`
 
