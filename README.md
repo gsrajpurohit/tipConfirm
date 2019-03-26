@@ -100,7 +100,7 @@ In the page's footer, just before, include the required JavaScript files.
 ```
 
 ### Demo
-[Demo](https://gsrajpurohit.github.io/tipConfirm/).
+[Live Examples](https://gsrajpurohit.github.io/tipConfirm/).
 
 ### Support
 If you found a bug or have a feature suggestion, please email me on rajpurohitganpat@gmail.com.
